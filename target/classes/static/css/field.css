@@ -1,0 +1,148 @@
+#fieldContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    /* Fit around cells */
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #215cffb7;
+    margin-bottom: 20px;
+}
+
+#fieldRow {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#fieldCell {
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    line-height: 20px;
+    border: 0px;
+}
+
+#simulationView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+#grid {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0px;
+}
+.cell {
+    width: 5px;
+    height: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #373737d6;
+    text-align: center;
+}
+.empty {
+    background-color: #3a3a3a00;
+}
+.leopard {
+    background-color: #0084ffcf; /* Soft blue */
+}
+.deer {
+    background-color: #bfbfbf; /* Muted blue */
+}
+.boar {
+    background-color: #5b0082; /* Deep greyish blue */
+}
+.tiger {
+    background-color: #87c1ff; /* Steel blue */
+}
+.cheetah {
+    background-color: #1500ffee; /* Light pastel blue */
+}
+.plant {
+    background-color: #000364; /* Greyish blue-green */
+}
+
+@media (max-width: 768px) {
+    #fieldContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff00;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #fieldRow {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #fieldCell {
+        text-align: center;
+        border: 0px;
+    }
+    
+    #simulationView {
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    #fieldContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff00;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    #fieldRow {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #fieldCell {
+        text-align: center;
+        border: 0px;
+    }
+    
+    #simulationView {
+        height: auto;
+        width: auto;
+    }
+}

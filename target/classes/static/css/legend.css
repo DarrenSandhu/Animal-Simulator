@@ -1,0 +1,154 @@
+#Legend {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+#Legend span {
+    display: inline-block;
+    margin-right: 5px;
+    color: #f4f4f9;
+}
+
+#Legend .leopard {
+    width: 20px;
+    height: 20px;
+    background-color: #0084ffcf; /* Gold color for Leopard */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .deer {
+    width: 20px;
+    height: 20px;
+    background-color: #bfbfbf; /* GreenYellow color for Deer */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .boar {
+    width: 20px;
+    height: 20px;
+    background-color: #5b0082; /* SaddleBrown color for Boar */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .tiger {
+    width: 20px;
+    height: 20px;
+    background-color: #87c1ff; /* Orange color for Tiger */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .cheetah {
+    width: 20px;
+    height: 20px;
+    background-color: #1500ffee; /* Crimson color for Cheetah */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .plant {
+    width: 20px;
+    height: 20px;
+    background-color: #000364; /* ForestGreen color for Plant */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+#Legend .empty {
+    width: 20px;
+    height: 20px;
+    background-color: #373737d6; /* Light gray color for Empty */
+    border: 1px solid #000;
+    margin-right: 20px;
+    color: #f4f4f9;
+}
+
+
+@media (max-width: 768px){
+    #Legend {
+        font-size: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #Legend .leopard {
+        width: 15px;
+        height: 15px;
+        background-color: #0084ffcf; /* Gold color for Leopard */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .deer {
+        width: 15px;
+        height: 15px;
+        background-color: #bfbfbf; /* GreenYellow color for Deer */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .boar {
+        width: 15px;
+        height: 15px;
+        background-color: #5b0082; /* SaddleBrown color for Boar */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .tiger {
+        width: 15px;
+        height: 15px;
+        background-color: #87c1ff; /* Orange color for Tiger */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .cheetah {
+        width: 15px;
+        height: 15px;
+        background-color: #1500ffee; /* Crimson color for Cheetah */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .plant {
+        width: 15px;
+        height: 15px;
+        background-color: #000364; /* ForestGreen color for Plant */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+    
+    #Legend .empty {
+        width: 15px;
+        height: 15px;
+        background-color: #373737d6; /* Light gray color for Empty */
+        border: 1px solid #000;
+        margin-right: 15px;
+        color: #f4f4f9;
+    }
+}

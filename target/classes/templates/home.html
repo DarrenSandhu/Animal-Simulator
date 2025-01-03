@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+    <!-- Add some css -->
+    <link rel="stylesheet" th:href="@{/css/field.css}">
+    <link rel="stylesheet" th:href="@{/css/status.css}">
+    <link rel="stylesheet" th:href="@{/css/legend.css}">
+
+    <!-- Add some js -->
+    <!-- Javascript for polling the simulation status -->
+    <script th:src="@{/js/simulationStatus.js}"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Simulator Status</h1>
+
+        <!-- Display the status here; will be updated by JavaScript -->
+        <span id="simulationStatus">Loading...</span><br>
+
+        <div id="buttonContainer">
+            <!-- Start Simulation Button -->
+            <button id="runButton" onclick="startSimulation()">Start Simulation</button>
+
+            <!-- Pause Simulation Button -->
+            <button id="pauseButton" onclick="pauseSimulation()" disabled>Pause Simulation</button>
+
+            <!-- Resume Simulation Button -->
+            <button id="resumeButton" onclick="resumeSimulation()" disabled>Resume Simulation</button>
+
+            <!-- Simulate One Step Button -->
+            <button id="simulateOneStep" onclick="simulateOneStep();">Simulate One Step</button>
+
+            <!-- Reset Simulation Button -->
+            <button id="resetButton" onclick="resetSimulation()">Reset Simulation</button>
+        </div>
+
+    </div>
+
+    <!-- Create a Grid to display the simulation -->
+    <div id="simulationView">
+        <h2>Simulation</h2>
+        <p id="Legend"> 
+            <span>Leopard</span><span class="leopard"></span> 
+            <span>Deer</span><span class="deer"></span>  
+            <span>Boar</span><span class="boar"></span>  
+            <span>Tiger</span><span class="tiger"></span>  
+            <span>Cheetah</span><span class="cheetah"></span>  
+            <span>Plant</span><span class="plant"></span>  
+            <span>Empty</span><span class="empty"></span>
+        </p>
+        <div id="fieldContainer" class="field-container">
+            <!-- The grid will be populated by JavaScript -->
+        </div>
+
+        <!-- Javascript for polling the simulation view -->
+        <script th:src="@{/js/simulationView.js}"></script>
+    </div>
+</body>
+</html>
